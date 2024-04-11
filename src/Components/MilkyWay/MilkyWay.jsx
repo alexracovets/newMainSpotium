@@ -29,7 +29,7 @@ export default function MilkyWay({ count, points }) {
             </bufferGeometry>
             <pointsMaterial
                 attach="material"
-                size={0.07}
+                size={0.08}
                 map={texture}
                 transparent
                 depthWrite={false}

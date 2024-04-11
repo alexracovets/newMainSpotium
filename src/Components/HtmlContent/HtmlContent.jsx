@@ -10,7 +10,9 @@ export default function HtmlContent() {
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Layout />} />
-                        <Route path="news" element={<Layout />} />
+                        <Route path="services" element={<Layout />} />
+                        <Route path="industries" element={<Layout />} />
+                        <Route path="contact" element={<Layout />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

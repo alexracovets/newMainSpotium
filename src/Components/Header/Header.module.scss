@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li a {
+            color: white;
+            font-family: 'JetBrains Mono';
+            text-transform: uppercase;
+        }
+    }
+}
