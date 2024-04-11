@@ -1,9 +1,13 @@
 
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { AdditiveBlending, TextureLoader } from "three";
-import getMilkyWayPoints from "../../utils/getMilkyWayPoints";
+import PropTypes from 'prop-types';
 
+MilkyWay.propTypes = {
+    count: PropTypes.number,
+    points: PropTypes.object
+}
 export default function MilkyWay({ count, points }) {
 
     const texture = useLoader(TextureLoader, '/texture/ball/ball.png');
