@@ -5,7 +5,7 @@ import Layout from "../../layout/default";
 
 export default function HtmlContent() {
     return (
-        <Html as='div' fullscreen >
+        <Html as='div' fullscreen style={{ pointerEvents: 'none' }} >
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>

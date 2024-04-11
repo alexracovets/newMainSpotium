@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { AdditiveBlending, TextureLoader } from "three";
 import PropTypes from 'prop-types';
-
+import { useControls } from 'leva'
 MilkyWay.propTypes = {
     count: PropTypes.number,
     points: PropTypes.object
@@ -16,7 +16,7 @@ export default function MilkyWay({ count, points }) {
     useFrame(({ clock }) => {
         milkyWayRef.current.rotation.z = clock.getElapsedTime() * 0.02;
     })
-
+    const test = useControls({ value: 0.07 })
     return (
         <points ref={milkyWayRef} rotation={[Math.PI / 2, Math.PI / 8, 0]} >
             <bufferGeometry attach="geometry">
@@ -29,7 +29,7 @@ export default function MilkyWay({ count, points }) {
             </bufferGeometry>
             <pointsMaterial
                 attach="material"
-                size={0.08}
+                size={test.value}
                 map={texture}
                 transparent
                 depthWrite={false}
