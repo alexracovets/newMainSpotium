@@ -11,9 +11,9 @@ export default function Main() {
                 <div className={s.main}>
                     <div className={s.main_left}>
                         <h1>
-                            <span className={s.normal}>Reliable partner in</span>
-                            <Cards />
+                            Reliable partner in
                         </h1>
+                        <Cards />
                         <button>
                             <span> DISCOVER US</span>
                             <img src={arrow} alt="arrow" className={s.arrow} />

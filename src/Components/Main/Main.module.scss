@@ -8,23 +8,19 @@
     align-items: center;
 
     h1 {
+        font-size: 3.625rem;
         font-weight: 800;
         text-transform: uppercase;
-
-        .normal {
-            display: block;
-            font-size: 3.625rem;
-            color: $color-neutral-20;
-            font-family: $font-DM_Sans;
-            line-height: 4.16875rem;
-            letter-spacing: .12rem;
-            text-shadow:
-                0 0.25rem 1rem #0000008e,
-                -0.125rem 0.125rem 0 #000,
-                0.125rem 0.125rem 0 #000,
-                0.125rem -0.125rem 0 #000,
-                -0.125rem -0.125rem 0 #000;
-        }
+        color: $color-neutral-20;
+        font-family: $font-DM_Sans;
+        line-height: 3rem;
+        letter-spacing: .12rem;
+        text-shadow:
+            0 0.25rem 1rem #0000008e,
+            -0.125rem 0.125rem 0 #000,
+            0.125rem 0.125rem 0 #000,
+            0.125rem -0.125rem 0 #000,
+            -0.125rem -0.125rem 0 #000;
     }
 
     button {

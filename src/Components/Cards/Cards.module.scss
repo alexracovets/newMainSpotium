@@ -5,11 +5,15 @@
     font-size: 2.23625rem;
     color: $color-white;
     font-family: $font-DM_Sans;
+    text-transform: uppercase;
+    font-weight: 800;
     line-height: 2.571875rem;
     letter-spacing: 2%;
     display: flex;
     flex-flow: row wrap;
     width: 33rem;
+    margin-top: 2.125rem;
+    margin-bottom: 2.125rem;
 
     .card {
         background-color: transparent;
