@@ -16,6 +16,7 @@
     "@types/three": "^0.163.0",
     "gsap": "^3.12.5",
     "leva": "^0.9.35",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
