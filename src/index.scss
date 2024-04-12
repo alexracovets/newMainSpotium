@@ -1,3 +1,5 @@
+@import './global/variable.scss';
+
 * {
     padding: 0;
     margin: 0;
@@ -57,4 +59,31 @@ main {
 html {
     font-size: 1.11112vw;
     user-select: none;
+}
+
+.flip {
+    display: block;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 33rem;
+    margin-top: 2.125rem;
+    margin-bottom: 2.125rem;
+
+
+    [data-kind="digit"] {
+        font-size: 2.23625rem;
+        font-family: $font-DM_Sans;
+        color: $color-white;
+        font-weight: 800;
+        letter-spacing: 0.045rem;
+        line-height: 2.9rem;
+        width: 2.544375rem !important;
+        height: 2.948125rem;
+        margin: 0.3125rem 0.1928125rem;
+        border-radius: 0.346875rem;
+        background-color: $color-neutral-50;
+    }
 }
