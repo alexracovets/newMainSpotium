@@ -1,13 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 import logo from '/image/logo.svg';
 import s from './Header.module.scss';
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+
 export default function Header() {
     const [isBurger, setIsBurger] = useState(false);
     const location = useLocation();
-    console.log(location.pathname)
+
     return (
         <header>
             <div className="wrapper">

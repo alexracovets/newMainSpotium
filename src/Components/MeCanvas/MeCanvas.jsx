@@ -19,6 +19,7 @@ export default function MeCanvas() {
         <Canvas
             dpr={window.devicePixelRatio}
             className={s.canvas}
+            style={{ pointerEvents: 'none' }}
         >
             <Lights />
             <MilkyWay count={count} points={points} />
