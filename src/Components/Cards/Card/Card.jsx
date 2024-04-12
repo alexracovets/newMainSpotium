@@ -25,14 +25,16 @@ export default function Card({ index }) {
             tl.to(card.current, {
                 delay: random + index * 0.01,
                 rotationX: 180,
-                duration: 0.15,
+                duration: 0.3,
+                ease: "power2.in",
                 onComplete: () => {
                     setActiveSentences((prev) => (prev + 1) % sentences.length);
                 },
             }).to(card.current, {
-                delay: random + index * 0.01 + 0.15,
+                delay: random + index * 0.01 + 0.3,
                 rotationX: 360,
-                duration: 0.15,
+                duration: 0.3,
+                ease: "power2.out",
             });
         }, 5000);
     }
