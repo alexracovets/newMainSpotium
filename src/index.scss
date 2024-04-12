@@ -17,6 +17,8 @@ body,
     height: 100%;
     max-width: 83.75rem;
     margin: 0 auto;
+    transition: all ease-in-out 300ms;
+    transition-delay: 600ms;
 }
 
 ul,
@@ -69,7 +71,7 @@ html {
     align-items: center;
     flex-flow: row wrap;
     width: 32rem;
-    margin: 1.5rem 0; 
+    margin: 1.5rem 0;
 
 
     [data-kind="digit"] {

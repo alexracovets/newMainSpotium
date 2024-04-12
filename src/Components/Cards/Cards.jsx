@@ -1,10 +1,10 @@
-import Card from './Card/Card';
+// import Card from './Card/Card';
+// import s from './Cards.module.scss';
 import { FlapDisplay, Presets } from "react-split-flap-effect";
-import s from './Cards.module.scss';
 import { useEffect, useState } from 'react';
 
-const MAX_LENGTH = 11;
-const initialArray = new Array(MAX_LENGTH).fill('');
+// const MAX_LENGTH = 11;
+// const initialArray = new Array(MAX_LENGTH).fill('');
 
 // export default function Cards() {
 //     return (
@@ -34,6 +34,7 @@ export default function Cards() {
             className='flip'
             chars={Presets.ALPHANUM + ",!"}
             length={22}
+            timing={0}
             value={sentences[activeSentences]}
         />
     )

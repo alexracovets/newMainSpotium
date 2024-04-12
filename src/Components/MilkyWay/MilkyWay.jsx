@@ -6,7 +6,8 @@ import PropTypes from 'prop-types';
 
 MilkyWay.propTypes = {
     count: PropTypes.number,
-    points: PropTypes.object
+    points: PropTypes.object,
+    colors: PropTypes.object
 }
 // export default function MilkyWay({ count, points }) {
 
@@ -62,8 +63,7 @@ export default function MilkyWay({ count, points, colors }) {
                     attach="attributes-color"
                     count={count}
                     array={colors}
-                    itemSize={3} // Змінено з 1 на 3, оскільки кольори в RGB
-                    vertexColors={true}
+                    itemSize={3}
                 />
             </bufferGeometry>
             <pointsMaterial
