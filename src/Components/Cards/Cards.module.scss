@@ -25,13 +25,12 @@
             width: 100%;
             height: 100%;
             text-align: center;
-            transition: transform ease-in-out 2s;
             transform-style: preserve-3d;
             pointer-events: all;
-
-            &:hover {
-                transform: rotateX(1800deg);
-            }
+            // transition: transform ease-in-out 2s;
+            // &:hover {
+            //     transform: rotateX(1800deg);
+            // }
 
             .inner__front,
             .inner__back {

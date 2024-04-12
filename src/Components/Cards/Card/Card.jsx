@@ -1,15 +1,61 @@
-import s from './Cards.module.scss';
+import { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
+import s from '../Cards.module.scss';
+import gsap from "gsap";
 
-export default function Cards({ letter }) {
+const sentences = [
+    'software   development',
+    'asdasd asdas asdasdsa',
+];
+
+export default function Card({ index }) {
+    const [activeSentences, setActiveSentences] = useState(0);
+    const [isAnimation, setIsAnimation] = useState(false);
+    const card = useRef();
+
+    const animation = () => {
+        setInterval(() => {
+            const random = Math.random() * 0.1;
+            const tl = gsap.timeline({
+                onStart: () => setIsAnimation(true),
+                onComplete: () => {
+                    tl.kill();
+                },
+            });
+            tl.to(card.current, {
+                delay: random + index * 0.01,
+                rotationX: 180,
+                duration: 0.15,
+                onComplete: () => {
+                    setActiveSentences((prev) => (prev + 1) % sentences.length);
+                },
+            }).to(card.current, {
+                delay: random + index * 0.01 + 0.15,
+                rotationX: 360,
+                duration: 0.15,
+            });
+        }, 5000);
+    }
+
+    useEffect(() => {
+        if (!isAnimation) {
+            animation()
+        }
+
+    }, [isAnimation]);
 
     return (
         <div className={s.card}>
-            <div className={s.card__inner}>
+            <div ref={card} className={s.card__inner}>
                 <div className={s.inner__front}>
-                    {letter ? letter : null}
+                    {sentences[activeSentences][index]}
                 </div>
                 <div className={s.inner__back}></div>
             </div>
         </div>
-    )
-} 
+    );
+}
+
+Card.propTypes = {
+    index: PropTypes.number,
+};
