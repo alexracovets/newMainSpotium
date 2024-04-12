@@ -10,10 +10,13 @@ import s from './MeCanvas.module.scss';
 
 export default function MeCanvas() {
     const [points, setPoints] = useState(null);
+    const [colors, setColors] = useState(null);
     const count = 10000;
 
     useEffect(() => {
-        setPoints(getMilkyWayPoints(count))
+        const float = getMilkyWayPoints(count);
+        setPoints(float.points);
+        setColors(float.colors)
     }, [])
     return (
         <Canvas
@@ -22,7 +25,7 @@ export default function MeCanvas() {
             style={{ pointerEvents: 'none' }}
         >
             <Lights />
-            <MilkyWay count={count} points={points} />
+            <MilkyWay count={count} points={points} colors={colors} />
             <HtmlContent />
         </Canvas>
     )
