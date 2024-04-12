@@ -38,10 +38,7 @@ export default function Card({ index }) {
     }
 
     useEffect(() => {
-        if (!isAnimation) {
-            animation()
-        }
-
+        !isAnimation && animation();
     }, [isAnimation]);
 
     return (
