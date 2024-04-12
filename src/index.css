@@ -56,4 +56,5 @@ main {
 
 html {
     font-size: 1.11112vw;
+    user-select: none;
 }
