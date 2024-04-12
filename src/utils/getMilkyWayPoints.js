@@ -19,9 +19,9 @@ const getMilkyWayPoints = (count) => {
         points[i * 3 + 1] = y;
         points[i * 3 + 2] = z;
 
-        colors[i * 3] = (Math.random() < 0.01 ? 254 : 255) / 255;
-        colors[i * 3 + 1] = (Math.random() < 0.01 ? 197 : 255) / 255;
-        colors[i * 3 + 2] = (Math.random() < 0.01 ? 50 : 255) / 255;
+        colors[i * 3] = (Math.random() < 0.05 ? 254 : 255) / 255;
+        colors[i * 3 + 1] = (Math.random() < 0.05 ? 197 : 255) / 255;
+        colors[i * 3 + 2] = (Math.random() < 0.05 ? 50 : 255) / 255;
     }
 
     return {
