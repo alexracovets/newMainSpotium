@@ -1,7 +1,6 @@
  * {
      padding: 0;
      margin: 0;
-     pointer-events: none;
  }
 
  body,
@@ -63,4 +62,5 @@
 
  main {
      overflow: hidden;
+     padding: 0.5rem 0;
  }
