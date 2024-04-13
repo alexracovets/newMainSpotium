@@ -36,11 +36,17 @@
 
             img {
                 margin-left: 0.5rem;
+                filter: grayscale(1);
+                transition: all ease-in-out 300ms;
             }
 
             &.active {
                 span {
                     color: $color-primary;
+                }
+
+                img {
+                    filter: grayscale(0);
                 }
             }
         }
