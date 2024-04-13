@@ -1,10 +1,8 @@
-
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Cards from '../../Components/Cards/Cards';
 import UI_Button from '../../Components/UI_Button/UI_Button';
-
 
 import s from './MainPage.module.scss';
 export default function MainPage({ location }) {
@@ -18,7 +16,7 @@ export default function MainPage({ location }) {
         <>
             {
                 isMain &&
-                <div className={isMain ? s.wrapper + ' ' + s.active : s.wrapper} style={{ transform: isMain ? 'translateX(0%)' : 'translateX(-100%)' }}>
+                <div className={s.wrapper}>
                     <section>
                         <div className={s.content}>
                             <h1>Reliable partner in</h1>

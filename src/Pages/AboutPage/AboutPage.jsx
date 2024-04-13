@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import s from './AboutPage.module.scss';
 import Strengths from '../../Components/Blocks/Strengths/Strengths';
 
+import s from './AboutPage.module.scss';
 export default function AboutPage({ location }) {
     const [isAbout, setIsAbout] = useState(false);
 
