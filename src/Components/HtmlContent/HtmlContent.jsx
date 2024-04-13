@@ -4,12 +4,13 @@ import Layout from "../../layout/default";
 
 export default function HtmlContent() {
     return (
-        <Html as='div' fullscreen style={{ pointerEvents: 'none'}} >
+        <Html as='div' fullscreen style={{ pointerEvents: 'none' }} >
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index element={<Layout />} />
                         <Route path="services" element={<Layout />} />
+                        <Route path="about" element={<Layout />} />
                         <Route path="industries" element={<Layout />} />
                         <Route path="contact" element={<Layout />} />
                     </Route>

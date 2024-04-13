@@ -1,16 +1,26 @@
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
+import arrowImage from '/image/arrow_btn.svg'
 import s from './UI_Button.module.scss';
+export default function UI_Button({ text, arrow }) {
+    const [isBtn, setIsBtn] = useState(false);
 
-export default function UI_Button({ text }) {
+    useEffect(() => {
+        arrow ? setIsBtn(true) : setIsBtn(false);
+    }, [arrow])
 
     return (
         <button className={s.button}>
-            {text}
+            <span className={s.text}>
+                {text}
+                {isBtn ? <img src={arrowImage} alt="arrow" /> : null}
+            </span>
         </button>
     )
 }
 
 UI_Button.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string,
+    arrow: PropTypes.bool
 }

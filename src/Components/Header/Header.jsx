@@ -1,43 +1,15 @@
-import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import Logo from "./Logo/Logo";
+import Navigation from "./Navigation/Navigation";
 
-import logo from '/image/logo.svg';
 import s from './Header.module.scss';
 
 export default function Header() {
-    const [isBurger, setIsBurger] = useState(false);
-    const location = useLocation();
-
     return (
         <header>
             <div className="wrapper">
                 <div className={s.header}>
-                    <NavLink to={'/'} className={s.logo}>
-                        <img src={logo} alt="logo" />
-                    </NavLink>
-                    <nav className={s.navigation}>
-                        <ul>
-                            <li>
-                                <NavLink to={'/services'} className={location.pathname === '/services' && s.active}>
-                                    Services
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/industries'} className={location.pathname === '/industries' && s.active}>
-                                    Industries
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/contact'} className={location.pathname === '/contact' && s.active}>
-                                    Contact us
-                                </NavLink>
-                            </li>
-                        </ul>
-                        <button className={isBurger ? s.burger + ' ' + s.active : s.burger} onClick={() => setIsBurger(!isBurger)}>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </nav>
+                    <Logo />
+                    <Navigation />
                 </div>
             </div>
         </header>

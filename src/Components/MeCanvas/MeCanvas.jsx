@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import getMilkyWayPoints from "../../utils/getMilkyWayPoints";
 import HtmlContent from "../HtmlContent/HtmlContent";
 import MilkyWay from "../MilkyWay/MilkyWay";
-import Lights from "../Lights/Lights";
+import Lights from "./Lights/Lights";
 
 import s from './MeCanvas.module.scss';
 
