@@ -1,9 +1,10 @@
-import Cards from '../Cards/Cards';
 import { useLocation } from "react-router-dom";
-import arrow from '/image/arrow_btn.svg';
+import { useEffect, useState } from 'react';
+
+import Cards from '../Cards/Cards';
+import UI_Button from '../UI_Button/UI_Button';
 
 import s from './Main.module.scss';
-import { useEffect, useState } from 'react';
 
 export default function Main() {
     const location = useLocation();
@@ -26,17 +27,16 @@ export default function Main() {
     }, [location])
     return (
         <main>
-
-            {showCards &&
+            {
+                showCards &&
                 <div className={isMain ? s.wrapper + ' ' + s.active : s.wrapper} style={{ transform: isMain ? 'translateX(0%)' : 'translateX(-100%)' }}>
                     <div className={isMain ? s.main + ' ' + s.active : s.main} >
                         <div className={s.main_left}>
                             <h1>Reliable partner in</h1>
                             <Cards />
-                            <button>
-                                <span> DISCOVER US</span>
-                                <img src={arrow} alt="arrow" className={s.arrow} />
-                            </button>
+                            <div className={s.btn}>
+                                <UI_Button text={'DISCOVER US'} />
+                            </div>
                         </div>
                     </div>
                 </div>
