@@ -2,7 +2,10 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import Services from '../../Components/Blocks/Services/Services';
+
 import s from './ServicesPage.module.scss';
+
 export default function ServicesPage({ location }) {
     const [isServices, setIsServices] = useState(false);
 
@@ -18,7 +21,8 @@ export default function ServicesPage({ location }) {
                 <div className={s.wrapper} >
                     <section>
                         <div className={s.content}>
-                            asdasd
+                            <h2>Services</h2>
+                            <Services />
                         </div>
                     </section>
                 </div>

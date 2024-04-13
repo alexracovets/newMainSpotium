@@ -14,12 +14,23 @@
         align-items: center;
 
         .content {
-            width: 100%;
+            width: 49.25%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
+
+            h2 {
+                color: $color-primary;
+                font-size: 3.625rem;
+                font-weight: 800;
+                line-height: 4.16875rem;
+                font-family: $font-DM_Sans;
+                text-transform: uppercase;
+                margin-bottom: 3.25rem;
+                margin-top: 3.25rem;
+            }
         }
     }
 }
