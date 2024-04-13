@@ -16,14 +16,14 @@
         transition-delay: 600ms;
     }
 
-    .main {
+    section {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .main_left {
+        .content {
             width: 100%;
             height: 100%;
             display: flex;
@@ -48,8 +48,8 @@
             }
 
             .btn {
-                width: 181.54px;
-                height: 48px;
+                width: 11.34625rem;
+                height: 3rem;
             }
         }
     }
