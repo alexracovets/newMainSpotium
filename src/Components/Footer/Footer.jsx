@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import eng from '/image/svg/en.svg';
-import ua from '/image/svg/ua.svg';
+import eng from '/image/icons/langs/en.svg';
+import ua from '/image/icons/langs/ua.svg';
 
 import s from './Footer.module.scss';
 export default function Footer() {

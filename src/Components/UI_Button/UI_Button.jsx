@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import arrowImage from '/image/svg/arrow_btn.svg'
+import arrowImage from '/image/icons/ui/arrow.svg'
 import s from './UI_Button.module.scss';
 export default function UI_Button({ text, arrow }) {
     const [isBtn, setIsBtn] = useState(false);
