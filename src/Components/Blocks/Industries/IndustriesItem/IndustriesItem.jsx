@@ -31,11 +31,7 @@ export default function IndustriesItem({ industry, rowIndustry, setDetailText })
         } else {
             setStatus(false)
         }
-    }, [rowIndustry, industry, currentRowIndustry, currentIndexIndustry, isDetailIndustry])
-
-    useEffect(() => {
-        console.log(status)
-    }, [status])
+    }, [rowIndustry, industry, currentRowIndustry, currentIndexIndustry, isDetailIndustry]) 
 
     return (
         <li

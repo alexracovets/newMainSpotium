@@ -8,7 +8,7 @@ const row1 = [
     {
         name: 'Banks',
         row: 0,
-        text: "Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks, Banks",
+        text: "The banks of today strive for a comprehensive set of online and mobile banking services. This includes payments, transfers, account management, investment, lending and other services. Banks replace manual operations with modern, intuitive and easy-to-navigate digital interfaces, and invest in UX/UI design to make their platforms user-friendly and enjoyable. Banks seek to better understand customer behaviour and identify opportunities to improve their products and services.",
         idx: 0
     },
     {

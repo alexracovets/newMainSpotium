@@ -23,7 +23,7 @@
             justify-content: flex-start;
             align-items: center;
             pointer-events: all;
-            padding: 0 0.8125rem;
+            padding: 0 1rem;
             box-sizing: border-box;
             cursor: pointer;
 
@@ -33,6 +33,18 @@
 
             &:last-of-type {
                 padding-right: 0;
+            }
+
+            &.active {
+                color: $color-primary;
+
+                .plus {
+
+                    &::before,
+                    &::after {
+                        background-color: $color-primary;
+                    }
+                }
             }
 
             &.hide {
@@ -81,20 +93,12 @@
         color: $color-white;
         font-family: $font-JB_Mono;
         width: 100%;
-        border-top: 1px solid transparent;
-        opacity: 0;
-        max-height: 0;
-        padding: 0 0;
-        margin-top: 0;
-        transition: all ease-in 300ms;
+        transition: all ease-in-out 300ms;
 
-        &.active {
-            opacity: 1;
-            max-height: 100%;
-            margin-top: 0.8125rem;
-            padding: 0.8125rem 0;
-            border-top: 1px solid $color-primary;
-            pointer-events: all;
+        .text {
+            padding: 0.8125rem 0rem;
+            padding-bottom: 2.125rem;
+            border-top: 0.0625rem solid $color-primary;
         }
     }
 }

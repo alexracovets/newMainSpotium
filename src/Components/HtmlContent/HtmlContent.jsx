@@ -9,6 +9,7 @@ import AboutPage from '../../Pages/AboutPage/AboutPage';
 import MainPage from '../../Pages/MainPage/MainPage';
 import ServicesPage from '../../Pages/ServicesPage/ServicesPage';
 import IndustriesPage from '../../Pages/IndustriesPage/IndustriesPage';
+import ContactPage from "../../Pages/ContactPage/ContactPage";
 
 export default function HtmlContent() {
     return (
@@ -21,7 +22,7 @@ export default function HtmlContent() {
                             <Route path="about" element={<AboutPage />} />
                             <Route path="services" element={<ServicesPage />} />
                             <Route path="industries" element={<IndustriesPage />} />
-                            <Route path="contact" element={<Layout />} />
+                            <Route path="contact" element={<ContactPage />} />
                         </Route>
                     </Routes>
                 </Provider>

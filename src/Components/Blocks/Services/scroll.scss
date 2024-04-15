@@ -1,8 +1,6 @@
 @import '../../../global/variable.scss';
 
 .scroll {
-    overflow: visible !important;
-
     &.trackYVisible {
         .ScrollbarsCustom-Track {
             opacity: 1;
