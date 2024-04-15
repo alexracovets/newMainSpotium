@@ -7,22 +7,22 @@
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    width: 32rem;
+    width: 34rem;
     margin: 1.5rem 0;
 
 
     [data-kind="digit"] {
-        font-size: 2.23625rem;
-        font-family: $font-DM_Sans;
-        color: $color-primary;
-        font-weight: 800;
+        font-size: 3.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        color: $color-white;
+        font-weight: 400;
         letter-spacing: 0.045rem;
-        line-height: 2.9rem;
-        width: 2.544375rem !important;
-        height: 2.948125rem;
+        line-height: 4.5rem;
+        width: 2.875rem !important;
+        height: 4.125rem;
         margin: 0.3125rem 0.08rem;
         border-radius: 0.2rem;
-        background-color: #3b3939;
-        border: 0.1rem solid #80808080;
+        background-image: url('/test.svg');
+        background-size: cover;
     }
 }

@@ -1,7 +1,7 @@
 import { FlapDisplay, Presets } from "react-split-flap-effect";
 import { useEffect, useState } from 'react';
 
-import './Cards.scss';
+import s from './Cards.module.scss';
 const sentences = [
     'software   development',
     'asdasd asdas asdasdsa',
@@ -9,17 +9,16 @@ const sentences = [
 
 export default function Cards() {
     const [activeSentences, setActiveSentences] = useState(0);
-    
+
     useEffect(() => {
         setInterval(() => setActiveSentences((prev) => (prev + 1) % sentences.length), 5000);
     }, []);
 
     return (
         <FlapDisplay
-            className='flip'
+            className={s.flip}
             chars={Presets.ALPHANUM + ",!"}
-            length={22}
-            timing={0}
+            length={22} 
             value={sentences[activeSentences]}
         />
     )

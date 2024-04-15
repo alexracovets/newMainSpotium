@@ -1,8 +1,9 @@
-import eng from '/image/svg/en.svg';
-import ua from '/image/svg/ua.svg';
-import s from './Footer.module.scss';
 import { useState } from 'react';
 
+import eng from '/image/svg/en.svg';
+import ua from '/image/svg/ua.svg';
+
+import s from './Footer.module.scss';
 export default function Footer() {
     const [currentLang, setCurrentLang] = useState('EN')
     const langs = [

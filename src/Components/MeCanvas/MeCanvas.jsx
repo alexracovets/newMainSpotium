@@ -19,11 +19,7 @@ export default function MeCanvas() {
         setColors(float.colors)
     }, [])
     return (
-        <Canvas
-            dpr={window.devicePixelRatio}
-            className={s.canvas}
-            style={{ pointerEvents: 'none' }}
-        >
+        <Canvas dpr={window.devicePixelRatio} className={s.canvas}>
             <Lights />
             <MilkyWay count={count} points={points} colors={colors} />
             <HtmlContent />
