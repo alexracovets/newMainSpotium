@@ -1,12 +1,12 @@
-import ai from '/image/icons/ai_icon.svg';
-import mob from '/image/icons/mob_icon.svg';
-import srmBpm from '/image/icons/srmBpm_icon.svg';
-import xr from '/image/icons/xr_icon.svg';
-import web from '/image/icons/web_icon.svg';
-import eCom from '/image/icons/eCom_icon.svg';
-import dm from '/image/icons/dm_icon.svg';
-import bots from '/image/icons/bots_icon.svg';
-import analytics from '/image/icons/analytics_icon.svg';
+import ai from '/image/icons/strengths/ai_icon.svg';
+import mob from '/image/icons/strengths/mob_icon.svg';
+import srmBpm from '/image/icons/strengths/srmBpm_icon.svg';
+import xr from '/image/icons/strengths/xr_icon.svg';
+import web from '/image/icons/strengths/web_icon.svg';
+import eCom from '/image/icons/strengths/eCom_icon.svg';
+import dm from '/image/icons/strengths/dm_icon.svg';
+import bots from '/image/icons/strengths/bots_icon.svg';
+import analytics from '/image/icons/strengths/analytics_icon.svg';
 
 import s from './Strengths.module.scss';
 export default function Strengths() {
