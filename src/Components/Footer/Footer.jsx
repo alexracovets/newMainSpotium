@@ -1,5 +1,5 @@
-import eng from '/image/en.svg';
-import ua from '/image/ua.svg';
+import eng from '/image/svg/en.svg';
+import ua from '/image/svg/ua.svg';
 import s from './Footer.module.scss';
 import { useState } from 'react';
 
