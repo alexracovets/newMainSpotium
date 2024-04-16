@@ -5,6 +5,7 @@ export default function Lights() {
         <>
             <color attach={'background'} args={[bgColor]} />
             <pointLight position={[-30, 0, -30]} power={10.1} />
+            <ambientLight />
             <directionalLight />
         </>
     )
