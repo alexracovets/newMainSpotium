@@ -36,10 +36,8 @@ export default function MilkyWay({ count, points, colors }) {
             <pointsMaterial
                 attach="material"
                 size={0.09}
-                map={texture}
-                transparent
+                map={texture} 
                 depthWrite={false}
-                alphaTest={0.01}
                 blending={AdditiveBlending}
                 vertexColors={true}
             />

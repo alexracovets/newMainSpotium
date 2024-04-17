@@ -3,13 +3,11 @@ import { useEffect, useState } from "react";
 
 import getMilkyWayPoints from "../../utils/getMilkyWayPoints";
 import HtmlContent from "../HtmlContent/HtmlContent";
+import VoxelModel from "../VoxelModel/VoxelModel";
 import MilkyWay from "../MilkyWay/MilkyWay";
 import Lights from "./Lights/Lights";
 
 import s from './MeCanvas.module.scss';
-import VoxelModel from "../VoxelModel/VoxelModel";
-import { OrbitControls } from "@react-three/drei";
-
 export default function MeCanvas() {
     const [points, setPoints] = useState(null);
     const [colors, setColors] = useState(null);
@@ -21,12 +19,16 @@ export default function MeCanvas() {
         setColors(float.colors)
     }, [])
     return (
-        <Canvas dpr={window.devicePixelRatio} className={s.canvas}>
+        <Canvas
+            dpr={window.devicePixelRatio}
+            gl={{ preserveDrawingBuffer: true }}
+            camera={{ fov: 90, near: 0.1, far: 1000 }}
+            className={s.canvas}
+        >
             <Lights />
             <MilkyWay count={count} points={points} colors={colors} />
             <VoxelModel />
             <HtmlContent />
-            {/* <OrbitControls/> */}
         </Canvas>
     )
 }

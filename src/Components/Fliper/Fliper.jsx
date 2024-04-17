@@ -15,12 +15,14 @@ export default function Fliper() {
     }, []);
 
     return (
-        <FlapDisplay
+        <>
+            {/* <FlapDisplay
             className={s.flip}
             chars={Presets.ALPHANUM + ",!"}
             length={22}
             timing={0}
             value={sentences[activeSentences]}
-        />
+        /> */}
+        </>
     )
 } 
